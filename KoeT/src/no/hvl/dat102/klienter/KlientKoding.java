@@ -16,11 +16,10 @@ public class KlientKoding {
 		int kodeVerdi;
 
 		/*
-		 * Legger kodeverdiene inn i to køer.
-		 * Tenker oss at sender som koder har en kø og mottaker som dekoder har en kø
-		 * Køene blir operert "synkront" , tar ut og legger inn tilsvarende noekkelelement i de
-		 * to køene og vi er garantert riktig resultat. Vi går ikke rundt alfabetet i
-		 *  denne kodingen.
+		 * Legger kodeverdiene inn i to køer. Tenker oss at sender som koder har en kø
+		 * og mottaker som dekoder har en kø Køene blir operert "synkront" , tar ut og
+		 * legger inn tilsvarende noekkelelement i de to køene og vi er garantert riktig
+		 * resultat. Vi går ikke rundt alfabetet i denne kodingen.
 		 */
 
 		for (int i = 0; i < noekkel.length; i++) {
