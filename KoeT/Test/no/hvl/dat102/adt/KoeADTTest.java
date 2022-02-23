@@ -19,8 +19,6 @@ public abstract class KoeADTTest {
 	private Integer e0 = 1;
 	private Integer e1 = 2;
 	private Integer e2 = 3;
-	private Integer e3 = 4;
-	private Integer e4 = 5;
 	
 	protected abstract KoeADT<Integer> reset();
 	
