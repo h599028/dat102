@@ -36,7 +36,7 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 	public void leggTilAlle(MengdeADT<T> m2) {
 		Iterator<T> teller = m2.iterator();
 		while (teller.hasNext()) {
-			leggTil(teller.next());
+			this.leggTil(teller.next());
 		}
 	}
 
@@ -87,7 +87,8 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 				if (aktuell.getElement().equals(element))
 					funnet = true;
 				else {
-					forgjenger = aktuell.getNeste();
+					forgjenger = aktuell;
+					aktuell = aktuell.getNeste();
 				}
 			}
 			if (funnet) {
@@ -145,18 +146,16 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		if (this.antall != m2.antall()) {
 			likeMengder = false;
 		} else {
-			likeMengder = true;
 			Iterator<T> teller = m2.iterator();
+
 			while (teller.hasNext() && likeMengder) {
 				T element = teller.next();
 				if (!this.inneholder(element)) {
 					likeMengder = false;
 				}
 			}
-			return likeMengder;
 		}
-
-		return false;
+		return likeMengder;
 	}
 
 	@Override
@@ -171,7 +170,7 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public MengdeADT<T> union(MengdeADT<T> m2) {
-		// TODO - lage en mer effektiv kode
+		
 		MengdeADT<T> begge = new KjedetMengde<T>();
 		LinearNode<T> aktuell = start;
 		T element = null;
@@ -237,6 +236,5 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		start = nyNode;
 		antall++;
 	}
-
 
 }// class

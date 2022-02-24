@@ -2,6 +2,7 @@ package no.hvl.dat102.listeklient;
 
 import java.util.Scanner;
 
+import no.hvl.dat102.adt.OrdnetListeADT;
 import no.hvl.dat102.kjedet.KjedetOrdnetListe;
 
 //Turnering.java
@@ -12,7 +13,7 @@ public class Turnering {
 
 	public void settOpp() {
 
-		KjedetOrdnetListe<Lag> turnering = new KjedetOrdnetListe<Lag>();
+		OrdnetListeADT<Lag> turnering = new KjedetOrdnetListe<Lag>();
 		String lag1, lag2, navn;
 		int antallSeire = 0;
 		Scanner in = new Scanner(System.in);

@@ -52,7 +52,7 @@ public abstract class StabelADTTest {
 	}
 
 	/**
-	 * Test opå push and pop.
+	 * Test på push and pop.
 	 */
 	@Test
 	public void pushOgPop() {
