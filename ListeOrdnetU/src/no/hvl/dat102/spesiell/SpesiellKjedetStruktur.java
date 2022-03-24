@@ -40,11 +40,11 @@ public class SpesiellKjedetStruktur<T> {
 
 	public void snuKjedetStruktur() {
 
-		              // s peker på første noden i strukturen som
+		             // s peker på første noden i strukturen som
 		     		 // skal snues(reverseres).
 		             // initier r, den reverserte strukturen,
 					// til den tomme listen
-		            // så lenge ulik null{
+		            // så lenge s ulik null{
 		            // La n peke på s sin første node
 			        // La nå s peke på resten av strukturen
 			        // Kjed n til resten av r
@@ -54,6 +54,16 @@ public class SpesiellKjedetStruktur<T> {
 					// kjedete strukturen.
 		
 		LinearNode<T> r, n, s;
+		s = start;
+		r = null;
+		while(s!=null) {
+			n=s;
+			s=s.getNeste();
+			n.setNeste(r);
+			r=n;
+		}
+		start=r;
+		
 	}// metode
 
 	public int finnAntallLike(T el) {

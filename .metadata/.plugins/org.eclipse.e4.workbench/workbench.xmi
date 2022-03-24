@@ -73,12 +73,12 @@
           <tags>persp.newWizSC:org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard</tags>
           <tags>persp.actionSet:org.eclipse.jdt.junit.JUnitActionSet</tags>
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_RsxVFPSZEeiwidULLpTAjw" selectedElement="_RsxVFfSZEeiwidULLpTAjw" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_RsxVFfSZEeiwidULLpTAjw" containerData="2500" selectedElement="_RsxVFvSZEeiwidULLpTAjw">
-              <children xsi:type="basic:PartStack" xmi:id="_RsxVFvSZEeiwidULLpTAjw" elementId="left" containerData="6000" selectedElement="_RsxVF_SZEeiwidULLpTAjw">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_RsxVFPSZEeiwidULLpTAjw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_RsxVFfSZEeiwidULLpTAjw" toBeRendered="false" containerData="2500">
+              <children xsi:type="basic:PartStack" xmi:id="_RsxVFvSZEeiwidULLpTAjw" elementId="left" toBeRendered="false" containerData="6000">
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
                 <tags>noFocus</tags>
-                <children xsi:type="advanced:Placeholder" xmi:id="_RsxVF_SZEeiwidULLpTAjw" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_RseaIPSZEeiwidULLpTAjw" closeable="true">
+                <children xsi:type="advanced:Placeholder" xmi:id="_RsxVF_SZEeiwidULLpTAjw" elementId="org.eclipse.jdt.ui.PackageExplorer" toBeRendered="false" ref="_RseaIPSZEeiwidULLpTAjw" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Java</tags>
                 </children>
@@ -227,7 +227,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_RwxrUfSZEeiwidULLpTAjw" elementId="org.eclipse.jdt.ui.PackageExplorer"/>
+      <toolbar xmi:id="_RwxrUfSZEeiwidULLpTAjw" elementId="org.eclipse.jdt.ui.PackageExplorer" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_RseaIfSZEeiwidULLpTAjw" elementId="org.eclipse.jdt.ui.TypeHierarchy" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Type Hierarchy" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/class_hi.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.jdt.internal.ui.typehierarchy.TypeHierarchyViewPart"/>
@@ -350,7 +350,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RejS4vSZEeiwidULLpTAjw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Bur6wHoJEey85cBbzwsrdg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Q4SlpvSZEeiwidULLpTAjw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_A_rbgKEgEeypAYx1cJFiAg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Q4SlpvSZEeiwidULLpTAjw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RejS4_SZEeiwidULLpTAjw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -378,7 +378,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RejS6vSZEeiwidULLpTAjw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Bur6zXoJEey85cBbzwsrdg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Q4SlGPSZEeiwidULLpTAjw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_A_spqKEgEeypAYx1cJFiAg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Q4SlGPSZEeiwidULLpTAjw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RejS6_SZEeiwidULLpTAjw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2336,7 +2336,7 @@
   <addons xmi:id="_Q3i9U_SZEeiwidULLpTAjw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_Q3i9VPSZEeiwidULLpTAjw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_Q3sHMPSZEeiwidULLpTAjw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_Bdy_EXoJEey85cBbzwsrdg" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_Q4IzIPSZEeiwidULLpTAjw" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_Q4IzIfSZEeiwidULLpTAjw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
